@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Page</title>
+    <link rel="stylesheet" href="./sign-up.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=League+Spartan:wght@700&family=Montserrat:ital,wght@0,700;1,700&family=Open+Sans:ital@0;1&family=Outfit:wght@400;600;700&family=Protest+Revolution&family=Raleway:ital@0;1&family=Roboto:wght@400;700&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="leftSide">
+            <h1 class="content header">Stay updated!</h1>
+            <p class="content pFont">Join 60,000+ product managers receiving monthly updates on:</p>
+            <div class="list content">
+                <div class="images">
+                    <img src="./images/icon-list.svg" alt="icon">
+                    <img src="./images/icon-list.svg" alt="icon">
+                    <img src="./images/icon-list.svg" alt="icon">
+                </div>
+                <ul id="list" class="pFont">
+                    <li>Product discovery and building what matters</li>
+                    <li>Measuring to ensure updates are a success</li>
+                    <li>And much more!</li>
+                </ul>
+            </div>
+            <form class="content pFont">
+                <div class="label-error">
+                <label for="email">Email address</label> 
+                <p class="errorMSG"></p> <br>
+                </div>
+                <input type="email" id="emailAddress" placeholder="email@company.com">
+            </form>
+            <button type="button" class="content pFont subscribe" onclick="submit()">subscribe to monthly newsletter</button>
+        </div>
+        <div class="rightSide">
+            
+        </div>
+    </div>
+    <div class="successMSG">
+        <img src="./images/icon-success.svg" alt="icon" style="margin-bottom: 1rem;" id="success">
+        <h1 class="header">Thanks for subscribing!</h1>
+        <p class="content pFont">A confirmation email has been sent to <span id="fills"></span>. please open it and
+        click the button inside to confirm your subscription</p>
+        <button type="button" class="subscribe" id="subscribe" onclick="dismiss()">Dismiss message</button>
+    </div>
+    <script src="./sign-up.js"></script>
+</body>
+</html>

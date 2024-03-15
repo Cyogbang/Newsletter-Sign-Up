@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background: hsl(234, 29%, 20%);
+    line-height: 1.5rem;
+}
+
+.pFont {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.header {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+}
+
+.container {
+    width: 45rem;
+    display: flex;
+    margin-top: 5rem;
+    background: white;
+    border-radius: 1.5rem;
+    /* display: none; */
+}
+
+.leftSide {
+    padding: 3rem 1.5rem;
+}
+
+.rightSide {
+    background-image: url(./images/illustration-sign-up-desktop.svg);
+    background-size: cover;
+    border-radius: 1rem;
+    width: 22rem;
+    margin: 1rem;
+}
+
+.content {
+    margin-bottom: 1rem;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 5rem; 
+}
+
+.list {
+    display: flex;
+    gap: 1rem;
+}
+
+#list {
+    list-style-type: none;
+    line-height: 1.6rem;
+}
+
+#emailAddress {
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+    border: 1px solid (231, 7%, 60%);
+    cursor: pointer;
+}
+
+#emailAddress:hover {
+    border: 1px solid black;
+}
+
+.subscribe {
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    cursor: pointer;
+}
+
+.subscribe:hover {
+    background: hsl(4, 100%, 67%);
+}
+
+.successMSG {
+    background: white;
+    border-radius: 1.5rem;
+    width: 20rem;
+    padding: 2rem;
+    margin-top: 7rem;
+    display: none;
+}
+
+#success {
+    height: 3rem;
+    width: 3rem;
+}
+
+.label-error {
+    display: flex;
+}
+
+.errorMSG {
+    margin-left: 7rem;
+    color: red;
+    display: none;
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        width: 23rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 0rem;
+        border-radius: 0rem;
+        /* display: none; */
+    }
+
+    .leftSide {
+        padding: 2rem 2rem;
+    }
+
+    .rightSide {
+        background-image: url(./images/illustration-sign-up-mobile.svg);
+        background-size: cover;
+        border-radius: 0rem;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        width: 23rem;
+        height: 22rem;
+        margin: 0rem;
+    }
+
+    .images {
+        height: 12.5rem; 
+    }
+
+    #list {
+        line-height: 2rem;
+    }
+    
+    .successMSG {
+        background: white;
+        border-radius: 0rem;
+        width: 22rem;
+        height: 33rem;
+        padding: 6rem 2rem 2rem 2rem;
+        margin-top: 0rem;
+    }
+
+    #subscribe {
+        margin-top: 7rem;
+    }
+}
