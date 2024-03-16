@@ -9,7 +9,7 @@ function submit() {
 
     if (mailAddress === "") {
         console.log("empty");
-        error.innerHTML = "Valid email required";
+        error.innerHTML = "Email field is required";
         error.style.display = "block";
     } else {
         console.log("filled");
@@ -30,4 +30,6 @@ function dismiss() {
     signUP.style.display = "block";
 
     inputs.value = "";
+    error.innerHTML = "";
+    error.style.display = "none";
 }
